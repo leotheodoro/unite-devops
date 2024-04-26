@@ -2,7 +2,7 @@ replicaCount: 5
 image:
   repository: thdrps/nlw.service.passin
   pullPolicy: Always
-  tag: 71abf29
+  tag: f2a35d5
   port: 3333
 imagePullSecrets: []
 nameOverride: ''
