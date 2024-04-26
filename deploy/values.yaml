@@ -2,7 +2,7 @@ replicaCount: 5
 image:
   repository: thdrps/nlw.service.passin
   pullPolicy: Always
-  tag: f2a35d5
+  tag: 8f948b9
   port: 3333
 imagePullSecrets: []
 nameOverride: ''
@@ -29,7 +29,6 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
   tls: []
-
 startupProbe:
   httpGet:
     path: /health
@@ -51,7 +50,6 @@ readinessProbe:
   initialDelaySeconds: 60
   failureThreshold: 5
   periodSeconds: 10
-
 resources:
   requests:
     cpu: 200m
